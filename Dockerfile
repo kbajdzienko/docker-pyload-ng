@@ -56,6 +56,9 @@ COPY root/ /
 # add unrar
 COPY --from=unrar /usr/bin/unrar-alpine /usr/bin/unrar
 
+#add modifed pyload api
+COPY lsiopy /lsiopy
+
 # ports and volumes
 EXPOSE 8000
 VOLUME /config
